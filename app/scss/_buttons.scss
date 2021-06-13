@@ -28,13 +28,18 @@
             
         }
     }
-    &-contour{
-        &:hover{
-            
-        }
-    }
-    &-filter{
-        &:hover{
+    &-swipe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #5282EA 0%, #245DE2 100%);
+        box-shadow: 0px 10px 20px 3px rgba(81, 129, 234, 0.3), inset 0px -5px 0px rgba(172, 172, 172, 0.2);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        .icon{
+            font-size: 24px;
+            color: $white;
         }
     }
 }
