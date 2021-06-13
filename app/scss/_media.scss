@@ -7,7 +7,35 @@
 
 // MAX-WIDTH 1399.98PX breakpoints START
 @media (max-width: 1399.98px) {
-    
+    .header{
+        &-contact__body {
+            display: block;
+        }
+        &-contact__whatsapp,
+        &-contact__phone {
+            display: block;
+            margin-right: 0px;
+            margin-left: auto;
+        }
+    }
+    .product-nav {
+        flex-wrap: wrap;
+        margin: -10px -10px;
+        margin-bottom: 28px;
+        &__item {
+            margin: 10px 10px;
+        }
+    }
+    .parameters {
+        .container {
+            padding: 90px 0px 90px 15px
+        }
+    }
+    .stocks {
+        &__img {
+            left: 56%;
+        }
+    }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 
@@ -15,127 +43,139 @@
 @media (max-width: 1199.98px) {
   // bold
 .h1 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));;
 }
 .h3 {
-    font-size: 30px;
-    line-height: 37px;
+    font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(20px + (37 - 20) * ((100vw - 320px) / (1199 - 320)));
 }
 .t4 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (22 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 .t8 {
-    font-size: 17px;
-    line-height: 21px;
+    font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (21 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 .t9 {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (20 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 // bold
 
 
 // 800
 .h2 {
-    font-weight: 800;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(25px + (40 - 25) * ((100vw - 320px) / (1199 - 320)));
 }
 .h5 {
     font-weight: 800;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(22px + (40 - 22) * ((100vw - 320px) / (1199 - 320)));
 }
 .h6 {
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(22px + (35 - 22) * ((100vw - 320px) / (1199 - 320)));
 }
 // 800
 
 // 750
 .h1-750{
-    font-weight: 750;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));;
 }
 .h6-750 {
-    font-weight: 750;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: calc(16px + (25 - 16) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(20px + (35 - 20) * ((100vw - 320px) / (1199 - 320)));
 }
 .h2-750 {
-    font-weight: 750;
-    font-size: 35px;
-    line-height: 43px;
+    font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(25px + (43 - 25) * ((100vw - 320px) / (1199 - 320)));
 }
 .t3 {
-    font-weight: 750;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (35 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 .t11 {
-    font-weight: 750;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.1em;
+    font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (22 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 .t1 {
-    font-weight: 750;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: 0.1em;
+    font-size: calc(12px + (13 - 12) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(15px + (16 - 15) * ((100vw - 320px) / (1199 - 320)));
 }
 .t12 {
     font-weight: 750;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(16px + (20 - 16) * ((100vw - 320px) / (1199 - 320)));
 }
 .t14 {
-    font-weight: 750;
-    font-size: 23px;
-    line-height: 35px;
+    font-size: calc(15px + (23 - 15) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (35 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 // 750 
 
 
 // normal
 .h4 {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(20px + (22 - 20) * ((100vw - 320px) / (1199 - 320)));
 }
 .t2 {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(17px + (22 - 17) * ((100vw - 320px) / (1199 - 320)));
 }
 .t5 {
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(18px + (22 - 18) * ((100vw - 320px) / (1199 - 320)));
 }
 .t10 {
     font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(13px + (18 - 13) * ((100vw - 320px) / (1199 - 320)));
 }
 // normal
 
 //450
 .t13 {
-    font-weight: 450;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(16px + (20 - 16) * ((100vw - 320px) / (1199 - 320)));
 }
 .contact {
-    font-weight: 450;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1199 - 320)));
+    line-height: calc(20px + (25 - 20) * ((100vw - 320px) / (1199 - 320)));
 }
 // 450
+
+
+    .product {
+        &-list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .certificate {
+        .container {
+            display: block;
+        }
+        &-item {
+            margin: 0 auto;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .stocks {
+        &__img {
+            opacity: 0.3;
+        }
+    }
+    .faq {
+        .h2 {
+            text-align:  center;
+        }
+    }
 } 
 // MAX-WIDTH 1199.98PX breakpoints END
 
