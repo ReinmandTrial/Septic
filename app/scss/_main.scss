@@ -882,3 +882,216 @@
     }
 
 }
+
+.map{
+    position: relative;
+    width: 100%;
+    height: 586px;
+    padding-top: 105px;
+    &__discr{
+        top: 105px;
+        left: 285px;
+    }
+    &__body{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.contact{
+    width: 575px;
+    padding: 50px;
+    background: $white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    &__title{
+        font-weight: 750;
+        margin-bottom: 31px;
+    }
+    .icon{
+        margin-right: 10px;
+        color: #F87630;
+        font-size: 20px;
+    }
+    &__phone{
+        margin-right: 20px;
+    }
+    &__phone-num{
+        font-weight: 750;
+    }
+    &__data{
+        margin-bottom: 18px;
+    }
+    &__email{
+        display: inline-flex;
+        align-items: center;
+    }
+    &__geo{
+        margin-bottom: 17px;
+    }
+    &__chart{
+        margin-bottom: 35px;
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+    }
+    .btn{
+        margin-right: 25px;
+        .icon{
+            color: $white;
+        }
+    }
+    &__whats{
+        display: flex;
+        align-items: flex-end;
+        .icon{
+            color: #37B64D;
+            margin-bottom: 2px;
+        }
+    }
+
+    &__whatsapp-title,
+    &__email-adress{
+        text-decoration: underline;
+    }
+
+}
+.montage{
+    margin: 75px 0;
+    &__title{
+        font-weight: 800;
+        width: 943px;
+        margin-bottom: 30px;
+    }
+    .factors{
+        margin-bottom: 36px;
+    }
+    .btn-primary{
+        padding: 21px 30px 23px;
+        color: $white;
+        margin: 0 auto;
+        .icon{
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+    &-item{
+        width: 430px;
+        margin: 0 auto;
+    }
+    &-item__img{
+        width: 100%;
+        height: 269px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-item__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-item__text{
+        width: 200px;
+    }
+    &-item__date{
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-right: 10px;
+            background: linear-gradient(180deg, #5282EA 0%, #245DE2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 20px;
+        }
+    }
+}
+.factors{
+    display: flex;
+    &__icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #F7F7F7 0%, #EBECEA 113.59%);
+        padding: 25px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__item-header{
+        display: flex;
+        align-items: center;
+    }
+    &__item-line{
+        width: 41px;
+        margin: 0 13px;
+        img{
+            width: 100%;
+        }
+    }
+    &__icon-text{
+        width: 100px;
+        text-align: center;
+        font-weight: 750;
+        color: #9e9e9e;
+    }
+    &__item-line{
+        display: flex;
+        align-items: center;
+    }
+    &-line__end{
+        width: 6px;
+        height: 12px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-text{
+        font-weight: 800;
+        height: max-content;
+        margin-left: 20px;
+        margin: 10px;
+    }
+}
+.footer{
+    position: relative;
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+    &__link{
+        text-decoration: underline;
+        font-weight: 400;
+        margin-right: 15px;
+    }
+    &__icon{
+        margin-right: 11px;
+    }
+    .btn-swipe{
+        position: absolute;
+        top: 0;
+        right: 105px;
+        margin-top: -35px;
+        z-index: 3;
+        
+    }
+}
