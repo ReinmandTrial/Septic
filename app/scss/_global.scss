@@ -48,3 +48,14 @@ textarea {
 .burger{
 
 }
+.subscribe-input,
+.header-form__input {
+	color: $second-black;
+	&::placeholder {
+		text-transform: uppercase;
+		font-weight: 750;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+	}
+}

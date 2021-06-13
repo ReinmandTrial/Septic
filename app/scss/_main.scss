@@ -1,3 +1,7 @@
+.icon-arrowBig-right,
+.icon-nice {
+    font-size: 20px;
+}
 .header{
     // width: 1920px;
     width: 100%;
@@ -22,7 +26,33 @@
         }
     }
     .h1{
+        margin: 0 auto;
         text-align: center;
+        max-width: 810px;
+        text-transform: uppercase;
+        span {
+            span {
+                color: #F8A032;
+            }
+        }
+    }
+    .icon-whatsapp {
+        margin-right: 11px;
+        color: #37B64D;
+        font-size: 16px;
+    }
+    .icon-phone {
+        margin-right: 10px;
+        color: $white-icon;
+        font-size: 20px;
+    }
+    .icon-arrowBig-down {
+        font-size: 50px;
+        color: $orange;
+    }
+    .btn.t1 {
+        display: flex;
+        align-items: center;
     }
     &-contact{
         text-align: right;
@@ -34,9 +64,17 @@
     }
     &-contact__phone{
         margin-left: 25px;
+        display: flex;
+        align-items: center;
     }
     &-contact__whatsapp{
+        display: flex;
+        align-items: center;
         padding-left: 5px;
+    }
+    &-contact__title {
+        text-transform: uppercase;
+        margin-bottom: 5px;
     }
     .btn-secondary{
         margin-left: 29px;
@@ -73,18 +111,16 @@
     }
     &-form__btn{
         width: 300px;
-        padding: 22px 41px 22px 39px;
+        padding: 22px 30px;
     }
     &-more{
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 2px solid #F8A032;
+        background: none;
+        border: none;
         cursor: pointer;
+    }
+    &-watch {
+        margin: 0 auto;
+        width: 50px;
     }
 }
 
@@ -94,7 +130,7 @@
         display: flex;
     }
     .card-inf{
-        padding: 50px 12px 35px;
+        padding: 50px 42px 35px 42px;
         background: linear-gradient(180deg, #FCFBFB 0%, #EBECEA 101.95%);
         text-align: center;
         &:not(:last-child){
@@ -127,8 +163,14 @@
 		box-shadow: 0px 10px 20px 3px rgba(81, 129, 234, 0.3), inset 0px -5px 0px rgba(172, 172, 172, 0.2);
 	}
 	&__title{
-		font-weight: 600;
+        margin: 0 auto;
+        max-width: 199px;
 	}
+    &__text {
+        color: $second-black;
+        max-width: 231px;
+        margin: 0 auto;
+    }
 }
 .calculate{
     background: $background;
@@ -143,6 +185,10 @@
     &__subtitle{
         text-align: center;
         margin-bottom: 60px;
+        color: $second-black;
+    }
+    .h2 {
+        text-transform: uppercase;
     }
 }
 .quise{
@@ -160,6 +206,9 @@
             width: 100%;
             height: 100%;
         }
+    }
+    &-num {
+        color: $gray;
     }
     &-img__calculate{
         position: absolute;
@@ -227,13 +276,17 @@
     .btn{
         padding: 20px 30px 22px;
         color: $white;
+        display: flex;
+        align-items: center;
+        .icon-arrowBig-right {
+            margin-left: 10px;
+        }
     }
 }
 .features{
     margin: 100px 0;
     &-title{
         text-align: center;
-        font-weight: 800;
         margin-bottom: 58px;
     }
     &-list{
@@ -266,6 +319,9 @@
     &__title{
         margin-bottom: 5px;
     }
+    &__text {
+        color: $second-black;
+    }
 }
 
 .product{
@@ -273,7 +329,6 @@
     background: $background;
     &-title{
         margin-bottom: 30px;
-        font-weight: 800;
         text-align: center;
     }
     &-nav{
@@ -287,6 +342,8 @@
         cursor: pointer;
         border-radius: 5px;
         background: $white;
+        color: $second-black;
+        text-transform: uppercase;
         &:not(:last-child){
             margin-right: 10px;
         }
@@ -334,6 +391,7 @@
         height: 60px;
         padding: 22px 20px;
         margin-right: 15px;
+        color: $second-black;
     }
     .btn{
         width: 300px;
@@ -341,6 +399,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-transform: uppercase;
+    }
+    &-copyright {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
     }
 }
 .card-product{
@@ -360,8 +424,8 @@
         }
     }
     &__title{
-        font-weight: 750;
         margin-bottom: 15px;
+        text-transform: uppercase;
     }
     &__discr{
         display: flex;
@@ -383,6 +447,7 @@
         }
     }
     &__discr-title{
+        color: $second-black;
         span{
             font-weight: 750;
         }
@@ -402,8 +467,10 @@
         }
     }
     &__price{
-        font-weight: 750;
         margin-bottom: 20px;
+        font-weight: 750;
+        font-size: 18px;
+        line-height: 22px;
     }
     .btn{
         width: 100%;
@@ -424,6 +491,7 @@
         font-weight: 800;
         width: 680px;
         margin-bottom: 30px;
+        text-transform: uppercase;
     }
     &-list{
         display: flex;
@@ -446,18 +514,27 @@
         top: 20px;
     }
     .card-inf__title{
+        margin: unset;
         margin-bottom: 20px;
+        color: $second-black;
+    }
+    .card-inf__text {
+        color: $second-black;
+        max-width: 211px;
     }
     &-form__body{
         display: flex;
+        align-items: center;
     }
     &-form__title{
         font-weight: 600;
         margin-bottom: 10px;
+        color: $second-black;
     }
     &-form__text{
         margin-bottom: 20px;
         max-width: 775px;
+        color: $second-black;
     }
     .btn{
         height: 60px;
@@ -469,6 +546,9 @@
     }
     &-form__copyright{
         width: 250px;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: normal;
     }
     &-img{
         width: 430px;
@@ -488,8 +568,14 @@
         margin-bottom: 10px;
         font-weight: 800;
         text-align: center;
+        text-transform: uppercase;
     }
     &__text{
+        margin-bottom: 30px;
+        color: $second-black;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1181px;
         margin-bottom: 30px;
     }
     &-table{
@@ -536,5 +622,8 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        .icon-nice {
+            margin-right: 10px;
+        }
     }
 }
