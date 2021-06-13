@@ -1,12 +1,10 @@
 html,
 body {
-  height: 100%;
-//   font-family: 'Inter';
-//    font-weight: normal;
-//    font-style: normal;
-//   font-size: calc(14px + (15 - 14) * ((100vw - 360px) / (1920 - 360)));
-//   line-height: calc(18px + (20 - 18) * ((100vw - 360px) / (1920 - 360)));
-  overflow-x: hidden;
+	height: 100%;
+	font-family: 'Avenir Next Cyr';
+	font-weight: bold;
+	font-style: normal;
+	overflow-x: hidden;
 }
 textarea{
 	resize: none;
