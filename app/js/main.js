@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper-container', {
     speed: 400,
-    spaceBetween: 100,
+    spaceBetween: 10,
+    slidesPerView: 'auto',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -9,9 +10,13 @@ const swiper = new Swiper('.swiper-container', {
   });
   const swiperSecond = new Swiper('.swiper-content__second', {
     speed: 400,
-    spaceBetween: 100,
+    spaceBetween: 15,
     slidesPerView: 'auto', //кол-во показываемых слайдов
     watchOverflow: true, //если слайдов мало, - слайдер отключается
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

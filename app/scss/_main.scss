@@ -521,6 +521,7 @@
     .card-inf__text {
         color: $second-black;
         max-width: 211px;
+        margin: unset;
     }
     &-form__body{
         display: flex;
@@ -968,7 +969,7 @@
     margin: 75px 0;
     &__title{
         font-weight: 800;
-        width: 943px;
+        width: 700px;
         margin-bottom: 30px;
     }
     .factors{
@@ -1004,7 +1005,7 @@
         align-items: flex-start;
     }
     &-item__text{
-        width: 200px;
+        width: 255px;
     }
     &-item__date{
         display: flex;
@@ -1016,6 +1017,53 @@
             -webkit-text-fill-color: transparent;
             font-size: 20px;
         }
+    }
+    &-swiper__wrapper {
+        max-width: 1380px;
+        margin: 0 auto;
+    }
+    .swiper-wrapper {
+        width: 1380px;
+    }
+    .swiper-slide {
+        width: 430px;
+        margin: 15px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 70px;
+        height: 50px;
+        box-shadow: 0px 10px 20px rgba(255, 146, 0, 0.2), inset 0px -3px 0px #CF582D;
+        background: linear-gradient(180deg, #F8A032 0%, #F85B2E 100%);
+        border-radius: 25px 0px 0px 25px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 22px;
+        color: $white;
+    }
+    .swiper-button-next {
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    .swiper-button-prev {
+        margin-right: 3px;
+    }
+    &-button {
+        display: flex;
+    }
+    &-pagination {
+        display: flex;
+        align-items: center;
+    }
+    .swiper-pagination {
+        margin-right: 20px;
+        color: $gray;
+    }
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 .factors{
