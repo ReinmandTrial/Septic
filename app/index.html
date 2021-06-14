@@ -36,7 +36,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-secondary t1"><span class="icon icon-arrowBig-right"></span>Оставить заявку</button>
+              <button class="btn btn-secondary t1" id="btn-popup"><span class="icon icon-arrowBig-right"></span>Оставить заявку</button>
           </div>
           <h1 class="h1">Автономная канализация <span class="h1-750">у вас в доме <span>за 1 день</span></span></h1>
           <div class="header-form">
@@ -48,9 +48,9 @@
             </div>
           </div>
           <div class="header-watch">
-            <button class="header-more">
+            <a class="header-more" href="#down">
               <span class="icon icon-arrowBig-down"></span>
-            </button>
+            </a>
           </div>
         </div>
     </header>
@@ -95,7 +95,7 @@
             </div>
           </div>
         </section>
-        <section class="calculate">
+        <section class="calculate" id="down">
           <div class="container">
             <h2 class="calculate__title h2">Рассчитайте стоимость септика за 1 минуту</h2>
             <div class="calculate__subtitle t2">Мы подготовили для Вас тест из 5 вопросов, пройдя который,<br>
@@ -188,7 +188,7 @@
               <span class="product-nav__item t1">АКВАЛОС</span>
               <span class="product-nav__item t1">ЮНИЛОС-АСТРА</span>
               <span class="product-nav__item t1">ТОПАС С</span>
-              <span class="product-nav__item t1">ЕВРОЛОС (БИО)</span>
+              <span class="product-nav__item t1 active">ЕВРОЛОС (БИО)</span>
               <span class="product-nav__item t1">БИОДЕВАЙС</span>
               <span class="product-nav__item t1">ТВЕРЬ</span>
             </div>
@@ -279,11 +279,6 @@
             </div>
           </div>
         </section>
-
-
-
-
-
         <section class="montage">
           <div class="swiper-content__second">
             <div class="container montage-container">
@@ -478,11 +473,6 @@
             <button class="btn btn-primary t1"><span class="icon icon-nice"></span>рассчитать стоимость монтажа</button>
           </div>
         </section>
-
-
-
-
-
         <section class="parameters">
           <div class="container">
             <div class="parameters-content">
@@ -725,26 +715,26 @@
                   <div class="contact__data contact-font">
                     <a href="#" class="contact__phone">
                       <span class="icon icon-phone"></span>
-                      <span class="contact__phone-num">8 (495) 665-91-85</span>
+                      <span class="contact__phone-num t3">8 (495) 665-91-85</span>
                     </a>
                     <a href="#" class="contact__email">
                       <span class="icon icon-mail"></span>
-                      <span class="contact__email-adress">gkseptik@yandex.ru</span>
+                      <span class="contact__email-adress contact-font">gkseptik@yandex.ru</span>
                     </a>
                   </div>
                   <div class="contact__geo contact-font">
                     <span class="icon icon-geo"></span>
-                    <span class="contact__geo-adress">г. Балашиха, ул. Парковая, д.3</span>
+                    <span class="contact__geo-adress contact-font">г. Балашиха, ул. Парковая, д.3</span>
                   </div>
                   <div class="contact__chart contact-font">
                     <span class="icon icon-time"></span>
-                    <span class="contact__chart-time">Ежедневно: 09:00 - 18:00</span>
+                    <span class="contact__chart-time contact-font">Ежедневно: 09:00 - 18:00</span>
                   </div>
                   <div class="contact__footer">
-                    <button class="btn btn-secondary"><span class="icon icon-arrowBig-right"></span>оставить заявку</button>
+                    <button class="btn btn-secondary btn-popup t1"><span class="icon icon-arrowBig-right"></span>оставить заявку</button>
                     <a href="#" class="contact__whats">
                       <span class="icon icon-whatsapp"></span>
-                      <span class="contact__whatsapp-title">WhatsApp</span>
+                      <span class="contact__whatsapp-title h4">WhatsApp</span>
                     </a>
                   </div>
                 </div>
@@ -754,11 +744,27 @@
               <img src="images/map.png" alt="">
             </div>
         </section>
+        
+      <div class="popup d-none" id="popup">
+        <div class="popup__body" id="body">
+          <span class="icon icon-close" id="close"></span>
+          <h2 class="popup__title h5">ОСТАВИТЬ ЗАЯВКУ</h2>
+          <form class="popup__form">
+            <input type="text" class="popup__form-input" placeholder="Ваше имя">
+            <input type="text" class="popup__form-input" placeholder="номер телефона">
+            <label class="popup__checkBox">
+              <input class="popup__check-mark" type="checkbox">
+              <input class="popup__style-mark" type="checkbox">
+              <span>Согласен с политикой конфиденциальности</span>
+            </label>
+            <button class="btn btn-primary t1">оставить заявку</button>
+          </form>
+        </div>
+      </div>
       </div>
       <!-- CONTENT end -->
 
       <!-- popup  -->
-
       <!-- popup end  -->
     </main>
     <!-- MAIN end -->

@@ -1,4 +1,22 @@
-const swiper = new Swiper('.swiper-container', {
+
+window.onload = function(){
+  //popup
+  var btn = document.getElementById('btn-popup');
+  var popup = document.getElementById('popup');
+  var close = document.getElementById('close');
+  btn.onclick = function(){
+    popup.classList.remove("d-none");
+  }
+  close.onclick = function(){
+    popup.classList.add("d-none");
+  }
+  popup.addEventListener('click', function(event) {
+    var e=document.getElementById('body');
+    if (!e.contains(event.target)) popup.classList.add("d-none");
+  });
+  //popup end
+
+  const swiper = new Swiper('.swiper-container', {
     speed: 400,
     spaceBetween: 10,
     slidesPerView: 'auto',
@@ -56,3 +74,4 @@ for (let anchor of anchors) {
   })
 }
 //плавная прокрутка конец
+}

@@ -347,6 +347,12 @@
         &:not(:last-child){
             margin-right: 10px;
         }
+        &.active{
+            background: linear-gradient(180deg, #5282EA 0%, #245DE2 100%);
+            box-shadow: 0px 10px 20px rgba(81, 129, 234, 0.3), inset 0px -3px 0px rgba(172, 172, 172, 0.3);
+            border: none;
+            color: $white;
+        }
     }
     &-list{
         display: grid;
