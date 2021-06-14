@@ -21,7 +21,23 @@ const swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    loop: true
+    loop: true,
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        spaceBetween: 50,
+      },
+      992: {
+        spaceBetween: 300,
+      },
+      1200: {
+        spaceBetween: 100,
+      },
+      1400: {
+        spaceBetween: 30,
+      }
+
+    }
   });
 
 //плавная прокрутка
