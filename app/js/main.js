@@ -10,9 +10,9 @@ const swiper = new Swiper('.swiper-container', {
   });
   const swiperSecond = new Swiper('.swiper-content__second', {
     speed: 400,
-    spaceBetween: 15,
-    slidesPerView: 'auto', //кол-во показываемых слайдов
+    slidesPerView: 4, //кол-во показываемых слайдов
     watchOverflow: true, //если слайдов мало, - слайдер отключается
+    spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
