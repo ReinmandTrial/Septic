@@ -142,8 +142,12 @@ $(function(){
     },
     loop: true,
     breakpoints: {
-      // when window width is >= 320px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
       768: {
+        slidesPerView: 2,
         spaceBetween: 50,
       },
       992: {
