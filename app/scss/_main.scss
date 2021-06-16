@@ -850,9 +850,7 @@
             margin-right: 15px;
         }
     }
-    &-question__item{
-        display: flex;
-        align-items: center;  
+    &-question__item{   
         margin-bottom: 16px;  
         cursor: pointer;
         &.open{
@@ -867,6 +865,10 @@
             -webkit-text-fill-color: transparent;
 
         }
+    }
+    &-question__header{
+        display: flex;
+        align-items: center;
     }
     &-minus{
         display: none;
@@ -884,6 +886,12 @@
         padding: 50px;
         p{
             margin-bottom: 30px;
+        }
+    }
+    &-answer__item{
+        display: none;
+        &.open{
+            display: block;
         }
     }
     &-answer__title{
