@@ -599,6 +599,18 @@
         &__text {
             height: unset;
         }
+        .swiper-container.swiper--object {
+            width: 500px;
+            height: max-content;
+            .certificate__img {
+                width: 260px;
+                height: 162px;
+                img {
+                    width: 100%;
+                    object-fit: unset;
+                }
+            }
+        }
     }
     .price {
         margin: 40px 0px;
@@ -667,11 +679,42 @@
     }
     .faq {
         margin: unset;
+        padding: 40px 0px 0px;
         &-question {
-            padding: 43px 35px 0px 30px;
+            padding: 0px;
+            width: 100%;
+            .icon {
+                font-size: 16px;
+                margin-right: 10px;
+            }
         }
         &-answer {
-            padding: 50px 50px 0px;
+            display: none;
+        }
+        &-minus {
+            width: 18px;
+            margin-right: 10px;
+        }
+        &-answer__item {
+            padding-left: 27px;
+        }
+        &-answer__title {
+            display: none;
+        }
+        &-question__item {
+            margin-bottom: 0px;
+        }
+        &-question__header {
+            margin-bottom: 5px;
+        }
+        &-answer__body {
+            margin-bottom: 15px;
+            p {
+                color: $second-black;
+            }
+        }
+        .toggle-block {
+            margin-bottom: 15px;
         }
     }
     .map {
@@ -711,6 +754,9 @@
 // MAX-WIDTH 576.98PX breakpoints START 
 @media (max-width: 575.98px) {
     .quise {
+        .btn {
+            padding: 12px 13px 14px 15px;
+        }
        padding: unset;
        &-content {
            padding: 15px 25px 0px 20px;
@@ -823,6 +869,69 @@
             height: 70px;
             padding: 17.5px;
         }
+    }
+    .certificate {
+        .swiper-container {
+            width: calc(100% - 62px);
+            margin: 0 auto;
+        }
+        .container {
+            padding: 0px 10px;
+        }
+        .swiper-container.swiper--object {
+            width: 100%;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 30px;
+            height: 30px;
+            margin-top: -15px;
+            .icon {
+                font-size: 12px;
+            }
+        }
+        &__title {
+            width: unset;
+            margin-bottom: 5px;
+        }
+        &__text {
+            margin-bottom: 15px;
+        }
+    }
+    .subscribe {
+        &__leaflet {
+            display: none;
+        }
+    }
+    .parameters { 
+        &-form__title {
+            max-width: 199px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+        }
+        &-form__text {
+            margin-bottom: 15px;
+        }
+        .btn {
+            height: 40px;
+        }
+    }
+    .price {
+        &-table__name {
+            padding-left: 10px;
+        }
+        &-table__price {
+            align-items: center;
+        }
+        .btn {
+            height: 40px;
+        }
+        &-table {
+            margin-bottom: 20px;
+        }
+    }
+    .btn-primary {
+        box-shadow: 20px rgba(255, 146, 0, 0.2), inset 0px -2px 0px #CF582D;
     }
 }
 // MAX-WIDTH 576.98PX breakpoints END 
