@@ -41,6 +41,9 @@ window.onload = function(){
     },
     loop: true,
     breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
       576: {
         slidesPerView: 2,
         spaceBetween: 5,
