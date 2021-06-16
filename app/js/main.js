@@ -16,40 +16,42 @@ $(function(){
   //popup end
   //faq
   $('.btn-toggle').on('click',function(){
-    var count=0;
-    var btn = $(this);
-    var btnItems = btn.closest('.faq-question').find('.btn-toggle');
-    var bodyItems = btn.closest('.toggle-block').find('.toggle__item');
-    //десктоп
-    if($(window).width() > "767"){
-      // стили кнопки
-      $(btnItems).each(function(){
-        $(this).removeClass('open');
-      })
-      btn.addClass('open');
-      //индекс нужного блока
-      $(btnItems).each(function(index){
-        if($(this).hasClass('open')){
-          count = index;
-        }
-      })
-      // скрываем все блоки и открываем нужный
-      $(bodyItems).each(function(index){
-        $(this).removeClass('open');
-        if(index != count){
-          $(this).hide('slow');
-        }else{
-          $(this).show('slow'); 
-        }
-      })
-    }else{
-      //мобила
-      $($('.faq-question').find('.toggle-block')).each(function(){
-        $(this).find('.btn-toggle').removeClass('open');
-        $(this).find('.toggle__item').hide('slow');
-      })
-      $(this).addClass('open');
-      $(this).next().show('slow');
+    if(!$(this).hasClass('open')){
+      var count=0;
+      var btn = $(this);
+      var btnItems = btn.closest('.faq-question').find('.btn-toggle');
+      var bodyItems = btn.closest('.toggle-block').find('.toggle__item');
+      //десктоп
+      if($(window).width() > "767"){
+        // стили кнопки
+        $(btnItems).each(function(){
+          $(this).removeClass('open');
+        })
+        btn.addClass('open');
+        //индекс нужного блока
+        $(btnItems).each(function(index){
+          if($(this).hasClass('open')){
+            count = index;
+          }
+        })
+        // скрываем все блоки и открываем нужный
+        $(bodyItems).each(function(index){
+          $(this).removeClass('open');
+          if(index != count){
+            $(this).hide('slow');
+          }else{
+            $(this).show('slow'); 
+          }
+        })
+      }else{
+        //мобила
+        $($('.faq-question').find('.toggle-block')).each(function(){
+          $(this).find('.btn-toggle').removeClass('open');
+          $(this).find('.toggle__item').hide('slow');
+        })
+        $(this).addClass('open');
+        $(this).next().show('slow');
+      }
     }
   })
   // конец

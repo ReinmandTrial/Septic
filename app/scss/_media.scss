@@ -748,11 +748,17 @@
             margin-bottom: 20px;
         }
     }
+    .contact{
+        box-shadow: none;
+    }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
 // MAX-WIDTH 576.98PX breakpoints START 
 @media (max-width: 575.98px) {
+    .btn-swipe{
+        display: none;
+    }
     .quise {
         .btn {
             padding: 12px 13px 14px 15px;
@@ -931,7 +937,26 @@
         }
     }
     .btn-primary {
-        box-shadow: 20px rgba(255, 146, 0, 0.2), inset 0px -2px 0px #CF582D;
+        background: linear-gradient(180deg, #F8A032 0%, #F85B2E 100%);
+        box-shadow: 0px 10px 20px rgba(255, 146, 0, 0.2), inset 0px -2px 0px #CF582D;
+        height: 40px !important;
+    }
+    .footer{
+        &-content{
+            height: unset;
+            flex-wrap: wrap;
+            padding: 15px 0 21px;
+        }
+        &__link{
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            text-decoration: none;
+            margin-bottom: 15px;
+        }
+    }
+    .faq-question__text{
+        max-width: 262px;
     }
 }
 // MAX-WIDTH 576.98PX breakpoints END 
